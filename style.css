@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+.students{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10%;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(7, 7, 53);
+    height: auto;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+.students:not(2){
+    color: black;
+}
+
+.cards{
+   
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: aqua;
+    height: auto;
+    border-radius: 5vh;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: small;
+    text-align: center;
+    color: beige;
+    text-shadow: 2px 2px 2px black;
+}
+
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.cards::selection{
+    background-color: brown;
+    color: yellow;
+}
+
+.cards i{
+  font-size: 10vh;
+ filter: drop-shadow(0px 0px 10px white);
+ 
+   
+    
+}
+
+.cards:nth-child(4){
+    color: black;
+}
+
+form{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    background-color: rgb(24, 24, 87);
+    height: 40vh;
+    border-radius: 5vh;
+   justify-content: center;
+    
+    padding: 4vh;
+    
+    
+}
+
+.sumb{
+ text-decoration: none;
+ border: none;
+ margin-top: 5%;
+ border-radius: 1vw;
+ padding: 1vh;
+ background-color: burlywood
+ /* transition: 1.5s; ამას ვერ ვამუშავებ მას არ აქვს შედეგი*/
+}
+.sumb:hover{
+    background-color: rgb(157, 131, 96);
+    color: black;
+    transform: scale(0.9);
+}
+.sumb:active{
+  background-color: blanchedalmond;
+}
+
+.sumb::before{
+    content: "🎮 " ;
+}
+form h1{
+  color: aqua;
+}
+
+form h1::first-letter{
+    color: rgb(240, 6, 6);
+}
+form h1::after{
+    content: "🎮 ";
+}
+input{
+    margin-top: 5%;
+    border:none;
+
+    border-radius: 1vh;
+    padding: 1vh;
+}
+
+input:focus{
+    
+    box-shadow: 0px 0px 10px rgb(21, 181, 193);
+}
+
+input::placeholder{
+    color: wheat;
+}
+
+h3:not(.first){
+    color: rgb(241, 206, 6);
+}
+
+
+
+@media (max-width: 1443px){
+   .students{
+    flex-direction: column;
+
+   }
+
+   .cards{
+    width: auto;
+    margin-top: 2%;
+   }
+
+
+
+}
